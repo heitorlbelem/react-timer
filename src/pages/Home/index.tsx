@@ -98,6 +98,8 @@ export function Home() {
   useEffect(() => {
     if (activeCycle) {
       document.title = `${minutesShown}: ${secondsShown}`
+    } else {
+      document.title = 'Ignite Timer'
     }
   }, [minutesShown, secondsShown, activeCycle])
 
