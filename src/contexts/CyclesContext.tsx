@@ -18,6 +18,7 @@ interface CyclesContextType {
   activeCycle: Cycle | undefined
   activeCycleId: string | null | undefined
   amountSecondsPassed: number
+  cycles: Cycle[]
   finishActiveCycle: () => void
   updateAmountSecondsPassed: (seconds: number) => void
   createNewCycle: (data: CreateCycleData) => void
@@ -90,6 +91,7 @@ export function CyclesContextProvider({
         activeCycle,
         activeCycleId,
         amountSecondsPassed,
+        cycles,
         finishActiveCycle,
         updateAmountSecondsPassed,
         createNewCycle,
