@@ -44,7 +44,12 @@ export function Countdown() {
     return () => {
       clearInterval(interval)
     }
-  }, [activeCycle, totalSecondsAmount, finishActiveCycle])
+  }, [
+    activeCycle,
+    totalSecondsAmount,
+    finishActiveCycle,
+    updateAmountSecondsPassed,
+  ])
 
   useEffect(() => {
     if (activeCycle) {
